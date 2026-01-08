@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Read image
-img = cv2.imread("coca-cola.jpg")
+img = cv2.imread("unnamed.jpg")
 output = img.copy()
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
@@ -17,7 +17,7 @@ circles = cv2.HoughCircles(
     minDist=100,      
     param1=100,         
     param2=40,       
-    minRadius=200,       
+    minRadius=50,       
     maxRadius=1000
 )
 
