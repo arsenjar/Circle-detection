@@ -38,7 +38,7 @@ class Circledetector:
 
         return output # image that is returned
 
-# tessting class
+# testing class
 def main():
     image = cv2.imread("3.jpg")
     rudi = Circledetector(image, 60).detectCircles() # detection of the circle
