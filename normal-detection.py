@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-#setting up needed dimensions for poper classification
+#setting up needed dimensions for proper classification
 new_dimensions = (400, 400)
 
 #Class that could be further reused for finding circles logic
