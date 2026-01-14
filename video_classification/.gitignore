@@ -1,3 +1,5 @@
-.idea
-.mp4
-.avi
+# Add these to your .gitignore file
+*.avi
+*.mp4
+__pycache__/
+.DS_Storegit push origin main
