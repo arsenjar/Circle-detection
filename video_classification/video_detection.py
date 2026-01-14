@@ -1,9 +1,9 @@
 import cv2
-import numpy as np
-from circle_detection import Circledetector
+from circle_detection import Circledetector # importing circle detection class
 
+#main function
 def main():
-    video_path = "can_video.mp4"
+    video_path = "output_video.avi" # importing video
     cap = cv2.VideoCapture(video_path)
 
     if not cap.isOpened():
@@ -17,10 +17,10 @@ def main():
             break
 
         #circles detection
-        rudi = Circledetector(frame).detectCircles()
-        cv2.imshow('Rolling Coca-Cola', rudi)
+        detected_circles_frame = Circledetector(frame).detectCircles() #calling detection on each frame
+        cv2.imshow('Rolling Coca-Cola', detected_circles_frame)
 
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+        if cv2.waitKey(100) & 0xFF == ord('q'):
             break
 
     cap.release()
